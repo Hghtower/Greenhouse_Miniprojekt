@@ -1,0 +1,13 @@
+cmake_minimum_required(VERSION 3.17)
+
+project(Greenhouse_project)
+
+add_subdirectory(libs/SFML)
+
+include_directories(libs/SFML/include)
+
+include_directories(include)
+
+add_executable(Greenhouse_main src/Greenhouse_main.cpp src/Plants.cpp)
+
+target_link_libraries(Greenhouse_main sfml-graphics sfml-system)
