@@ -11,17 +11,17 @@ private:
     
 
 public:
-    float SetNewWaterLevel();
-    };
+    void SetNewWaterLevel() 
+ {
+    std::cout << "Fill with water (max 180 liters): " << std::endl;
+    std::cin >> WaterLevel;
+ };
+    
 
-    float getWater() { return WaterLevel; };
+    float getWater() 
+    { 
+        return WaterLevel;
+        
+    };
     float getFertilizerLevel() { return FertilizerLevel; };
 };
-
-
-
-
-void Greenhouse :: SetNewWaterLevel(float refil) {
-    
-    std::cin >> WaterLevel;
-}

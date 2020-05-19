@@ -1,11 +1,11 @@
 #include <iostream>
+#include <Greenhouse.h>
 #include <SFML/Graphics.hpp>
-#include "Greenhouse.h"
-
 
 int main(int argc, char const *argv[])
 {
-    SetNewWaterLevel();
+    Greenhouse Water;
+    Water.SetNewWaterLevel();
 
 
   
